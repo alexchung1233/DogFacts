@@ -1,4 +1,40 @@
-#dog_fact_div {
-    background-color: blueviolet;
-    
+#dog_fact_div{
+    font-size: 20px;
 }
+
+#dog_image_div {   
+}
+
+body {
+    /* background-image: url("../images/dog-background.jpg"); */
+    /* background-repeat: no-repeat; */
+}
+#dog_dance_img{
+    max-width: 40px;
+    max-height:40px;
+    padding: 10px 10px;}
+#title_div {
+    font-size: 50px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+#dog_fact_div{
+    background-color: white;
+    padding: 10px 50px;
+}
+
+#next_button {
+    padding: 5px 20px;
+    font-size: 20px;
+}
+.resizeable_image {
+    max-width: 500px;
+    max-height: 500px;
+}
+.content_div {
+    text-align: center;
+    padding: 10px;
+}
+
+
+

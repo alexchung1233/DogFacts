@@ -4,18 +4,29 @@ const DOGPIC_URL = "https://dog.ceo/api/breeds/image/random"
 const dogFactDiv = document.getElementById("dog_fact_div")
 const dogImageEle = document.getElementById("dog_image")
 const nextButton = document.getElementById("next_button")
-response = getFactsData()
-getDogPic()
+
+// initial fact and pic
+updatePage();
+
+
+document.addEventListener("keydown", (e)=>{
+    switch(e.key){
+        case "ArrowRight":
+            console.log("Right arrow pressed")
+            updatePage();
+            break;
+    }
+})
 
 nextButton.addEventListener("click", (e) => {
-    getFactsData();
-    getDogPic();
+    updatePage();
 })
 
 
-
-console.log(response)
-
+async function updatePage(){
+    getFactsData();
+    getDogPic();
+}
 
 async function getDogPic(){
     const response = await fetch(DOGPIC_URL);
