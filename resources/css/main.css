@@ -1,12 +1,12 @@
 .title_bar{
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Comic Sans MS', cursive
 }
 
 body {
     /* background-image: url("../images/dog-background.jpg"); */
     /* background-repeat: no-repeat; */
-    background-color: 		#f3f6f4;
+    background-color: white;
 }
 #dog_dance_img{
     max-width: 40px;
