@@ -1,25 +1,24 @@
-#dog_fact_div{
-    font-size: 20px;
-}
-
-#dog_image_div {   
+.title_bar{
+    font-size: 50px;
+    font-family: 'Comic Sans MS', cursive
 }
 
 body {
     /* background-image: url("../images/dog-background.jpg"); */
     /* background-repeat: no-repeat; */
+    background-color: 	#ffff80;
 }
 #dog_dance_img{
     max-width: 40px;
     max-height:40px;
-    padding: 10px 10px;}
+    padding: 20px 20x;}
 #title_div {
-    font-size: 50px;
-    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 #dog_fact_div{
-    background-color: white;
     padding: 10px 50px;
 }
 
@@ -34,7 +33,45 @@ body {
 .content_div {
     text-align: center;
     padding: 10px;
+    font-family: Gill Sans, sans-serif;
 }
 
+.fact_content_div{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-family: Gill Sans, sans-serif;
+    font-size: 25px;
+    /* display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%; */
+}
 
+#content_main_div{
+    display: inline-block;
+    background-image: url(./images/dog);
+    vertical-align: top;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.layout_div{
+    /* display: flex;
+    width: 50%; */
+}
 
+.left_side_div{
+    float: left;
+    margin-left: 20px;
+}
+
+.right_side_div {
+    float:right;
+}
+.resizeable_gif {
+    max-width: 200px;
+    max-height: 200px;
+}

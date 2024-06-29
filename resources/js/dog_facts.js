@@ -24,8 +24,13 @@ nextButton.addEventListener("click", (e) => {
 
 
 async function updatePage(){
-    getFactsData();
-    getDogPic();
+    var fact = await getFactsData();
+    var pic = await getDogPic();
+    Promise.all([fact, pic]).then((values)=>{    
+        dogImageEle.src = values[1]
+        dogFactDiv.textContent = values[0]})
+
+
 }
 
 async function getDogPic(){
@@ -35,7 +40,7 @@ async function getDogPic(){
     }
     var result = await response.json()
     var dogImage = result["message"]
-    dogImageEle.src = dogImage
+    // dogImageEle.src = dogImage
     return dogImage
 }
 
@@ -48,7 +53,7 @@ async function getFactsData(){
     var data = result["data"]
     var fact = data[0]["attributes"]["body"]
     var processed_data = JSON.stringify(fact)
-    dogFactDiv.textContent = processed_data
+    // dogFactDiv.textContent = processed_data
     console.log(processed_data)
 
     return processed_data
