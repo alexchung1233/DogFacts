@@ -6,7 +6,7 @@
 body {
     /* background-image: url("../images/dog-background.jpg"); */
     /* background-repeat: no-repeat; */
-    background-color: 	#ffff80;
+    background-color: 		#f3f6f4;
 }
 #dog_dance_img{
     max-width: 40px;
@@ -74,4 +74,12 @@ body {
 .resizeable_gif {
     max-width: 200px;
     max-height: 200px;
+}
+.button_style{
+    background-color: #9fc5e8;
+    border: 0px;
+}
+
+.button_style:hover{
+    background-color: aliceblue;
 }
